@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script type="text/javascript">
+        
+        class Alumno{
+            constructor(nombre, apellido, edad){
+                this.nombre=nombre;
+                this.apellido=apellido;
+                this.edad=edad;
+            }
+            
+            //METODO GET NOMBRE
+            get Nombre(){
+                return this.NombreCompleto()
+            }
+            
+            //METODO NOMBRE COMPLETO DE LA CLASE ALUMNO
+            NombreCompleto(){
+                return this.nombre + ' ' + this.apellido;
+            } 
+        }
+
+        function MostrarAlumno(){
+            const alumno = new Alumno('Sergio','Sanchez',23);
+            alert('El nombre completo del alumno es: ' + alumno.Nombre);
+        }
+    </script>
+
+</head>
+<body>
+    <h1>Clase Alumno</h1>
+    </br>
+    <input type="button" value="Mostrar valores de la clase alumno" onclick="MostrarAlumno()";
+
+</body>
+</html>
